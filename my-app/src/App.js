@@ -10,7 +10,7 @@ class App extends Component {
       { name: 'May', age: 20, hobbies: 'Video Games, And Drawing', id: 3 }
     ]
   }
-  addPeople = (person) => {
+  addPerson = (person) => {
     // console.log(person)
     person.id = Math.random()
     let people = [...this.state.people, person]
@@ -18,12 +18,21 @@ class App extends Component {
       people: people
     })
   }
+  deletePerson = (id) => {
+    let people = this.state.people.filter(person => {
+      return person.id !== id
+    })
+    this.setState({
+      people: people
+    })
+  }
+
   render() {
     return (
       <div className="App" >
         <h1>Welcome to My React App</h1>
-        <People people={this.state.people} />
-        <AddPeople addPeople={this.addPeople} />
+        <People deletePerson={this.deletePerson} people={this.state.people} />
+        <AddPeople addPerson={this.addPerson} />
       </div>
     );
   }

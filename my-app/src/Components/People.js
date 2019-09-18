@@ -1,6 +1,6 @@
 import React from 'react'
 
-const People = ({ people }) => {
+const People = ({ people, deletePerson }) => {
 
     // const { people } = props
     // const peopleList = people.map(person => {
@@ -40,6 +40,7 @@ const People = ({ people }) => {
                         <div>
                             Hobbies: {person.hobbies}
                         </div>
+                        <button onClick={() => { deletePerson(person.id) }}>Delete</button>
                         <br />
                     </div>) : null;
             })}

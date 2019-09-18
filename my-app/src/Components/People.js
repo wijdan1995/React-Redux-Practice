@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Wijdan = ({ people }) => {
+const People = ({ people }) => {
 
     // const { people } = props
     // const peopleList = people.map(person => {
@@ -47,4 +47,4 @@ const Wijdan = ({ people }) => {
     )
 }
 
-export default Wijdan
+export default People

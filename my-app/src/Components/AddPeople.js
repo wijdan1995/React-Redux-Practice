@@ -18,13 +18,17 @@ class AddPeople extends Component {
     render() {
         return (
             <div>
+                <br />
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" onChange={this.handleChange} />
+                    <br />
                     <label htmlFor="name">Age:</label>
                     <input type="text" id="age" onChange={this.handleChange} />
+                    <br />
                     <label htmlFor="name">Hobbies:</label>
                     <input type="text" id="hobbies" onChange={this.handleChange} />
+                    <br />
                     <button>Submit</button>
                 </form>
             </div>

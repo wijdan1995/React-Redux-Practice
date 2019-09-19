@@ -30,18 +30,11 @@ const People = ({ people, deletePerson }) => {
         <div className="people-list">
             {people.map(person => {
                 return person.age > 20 ? (
-                    <div className="wijdan" key={person.id}>
-                        <div>
-                            Name: {person.name}
-                        </div>
-                        <div>
-                            Age: {person.age}
-                        </div>
-                        <div>
-                            Hobbies: {person.hobbies}
-                        </div>
-                        <button onClick={() => { deletePerson(person.id) }}>Delete</button>
-                        <br />
+                    <div className="people" key={person.id}>
+                        <p>
+                            Name: {person.name} Age: {person.age} Hobbies: {person.hobbies}
+                            <button onClick={() => { deletePerson(person.id) }}>Delete</button>
+                        </p>
                     </div>) : null;
             })}
         </div>

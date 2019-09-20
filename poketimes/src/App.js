@@ -5,7 +5,7 @@ import Contact from './Components/Contact'
 import Home from './Components/Home'
 import Post from './Components/Post'
 
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 
 function App() {
@@ -13,10 +13,12 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
-        <Route exact path='/' component={Home} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/about' component={About} />
-        <Route path="/:post_id" component={Post} />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/about' component={About} />
+          <Route path="/:post_id" component={Post} />
+        </Switch>
       </div>
     </BrowserRouter>
   );

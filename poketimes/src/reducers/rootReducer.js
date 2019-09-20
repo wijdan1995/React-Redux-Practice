@@ -1,8 +1,8 @@
 const initState = {
     posts: [
-        { id: 1, title: 'One', body: 'One 1' },
-        { id: 2, title: 'Two', body: 'Two 2' },
-        { id: 3, title: 'Three', body: 'Three 3' },
+        { id: '1', title: 'One', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corrupti tempore vitae totam, voluptatum dolor ab iste dolorem, in sapiente possimus eveniet numquam? Possimus quaerat id, reiciendis asperiores nulla eum.' },
+        { id: '2', title: 'Two', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corrupti tempore vitae totam, voluptatum dolor ab iste dolorem, in sapiente possimus eveniet numquam? Possimus quaerat id, reiciendis asperiores nulla eum.' },
+        { id: '3', title: 'Three', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero corrupti tempore vitae totam, voluptatum dolor ab iste dolorem, in sapiente possimus eveniet numquam? Possimus quaerat id, reiciendis asperiores nulla eum.' },
     ]
 }
 
